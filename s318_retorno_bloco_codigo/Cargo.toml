@@ -1,0 +1,6 @@
+[package]
+name = "s318_retorno_bloco_codigo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
