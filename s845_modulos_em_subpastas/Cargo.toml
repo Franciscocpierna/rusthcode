@@ -1,0 +1,6 @@
+[package]
+name = "s845_modulos_em_subpastas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

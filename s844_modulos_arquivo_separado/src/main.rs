@@ -1,4 +1,4 @@
-mod matematica;
+mod matematica; //use só esse se quer matematica::somar(7,8); e matematica::subtrair(8,7);
 use matematica::{somar, subtrair};
 //use matematica::somar;
 //use matematica::subtrair;
