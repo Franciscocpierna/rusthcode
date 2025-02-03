@@ -2,7 +2,7 @@
 name = "s949_criando_biblioteca"
 version = "0.1.0"
 edition = "2021"
-authors = ["Franciscocpierna<pierna_f@hotmail.com>"]
+authors = ["Franciscocpierna <pierna_f@hotmail.com>"]
 description = "primeira Biblioteca"
 homepage = "https://github.com/Franciscocpierna/rusthcode"
 repository = "https://github.com/Franciscocpierna/rusthcode"
