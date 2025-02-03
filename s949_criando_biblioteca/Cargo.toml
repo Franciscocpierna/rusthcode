@@ -10,6 +10,6 @@ documentation = "https://github.com/Franciscocpierna/rusthcode"
 license = "MIT"
 
 keywords = ["hcode", "curso"]
-categories= ["functions"]
+
 
 [dependencies]
