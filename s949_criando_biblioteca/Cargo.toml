@@ -1,0 +1,15 @@
+[package]
+name = "s949_criando_biblioteca"
+version = "0.1.0"
+edition = "2021"
+authors = ["Francisco C. Pierna <pierna_f@hotmail.com>"]
+description = "primeira Biblioteca"
+homepage = "https://github.com/Franciscocpierna/rusthcode"
+repository = "https://github.com/Franciscocpierna/rusthcode"
+documentation = "https://github.com/Franciscocpierna/rusthcode"
+license = "MIT"
+
+keywords = ["hcode", "curso"]
+categories= ["functions"]
+
+[dependencies]
