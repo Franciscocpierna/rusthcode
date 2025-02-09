@@ -1,8 +1,9 @@
+//use std::fmt::Result;
+//use crate::arquivo;
 use std::{env, fs::File};
-use std::io::prelude::*;
-
-use crate::arquivo; //importa tudo io
-//use std::io::Write;
+use std::io::prelude::*;////importa tudo io
+use std::fs::metadata; 
+ //use std::io::Write;
 //C:\rust\s1159_criando_arquivos
 pub fn caminho_arquivo() -> Option<String> {
     if let Some(caminho_home) = env::var_os("HOME"){
@@ -37,7 +38,8 @@ pub fn criar(caminho: &str, nome_arquivo: &str){
 }
 
 pub fn ler(caminho_completo: &str){
-   match File::open(&caminho_completo){
+   if existe(caminho_completo).is_ok() {
+    match File::open(&caminho_completo){
     Ok(mut arquivo) =>{
         let mut conteudo = String::new();
         arquivo.read_to_string(&mut conteudo).unwrap();
@@ -49,6 +51,18 @@ pub fn ler(caminho_completo: &str){
         println!("Erro ao abrir o aruivo {}",e);
     }
    };
+}
+
+}
+
+pub fn existe(caminho_completo: &str) -> Result<(), &'static str> {
+    if metadata(caminho_completo).is_ok(){
+       Ok(())
+    }else {
+       Err("o arquivo não existe.")     
+         
+    }
 
 
 }
+
