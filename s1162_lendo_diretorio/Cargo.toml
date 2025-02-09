@@ -1,0 +1,6 @@
+[package]
+name = "s1162_lendo_diretorio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
